@@ -10,7 +10,7 @@ node('built-in')
     }
     stage('Continuous Deployment')
     {
-        deploy adapters: [tomcat9(credentialsId: '09b33fb2-454e-4dd0-87de-b37a309c35b5', path: '', url: 'http://172.31.93.159:8080')], contextPath: 'q1', war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: '09b33fb2-454e-4dd0-87de-b37a309c35b5', path: '', url: 'http://172.31.93.159:8080')], contextPath: 'multi1', war: '**/*.war'
     }
     stage('Continuous Testing')
     {
