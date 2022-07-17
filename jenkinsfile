@@ -74,7 +74,7 @@ pipeline
                 }
             }
         }
-        stage('Continuous Delievery')
+        stage('Continuous Delievery1')
         {
             steps
             {
