@@ -3,11 +3,10 @@ node('built-in')
     stage('Continuous Testing')
     {
         git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
-        sh 'java -jar /var/lib/jenkins/workspace/script1/testing.jar'
     }
     stage('Continuous Delievery')
     {
-        deploy adapters: [tomcat9(credentialsId: '09b33fb2-454e-4dd0-87de-b37a309c35b5', path: '', url: 'http://172.31.93.199:8080')], contextPath: 'ascm2', war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: '09b33fb2-454e-4dd0-87de-b37a309c35b5', path: '', url: 'http://172.31.93.199:8080')], contextPath: 'ascm20', war: '**/*.war'
     }
     
 }
